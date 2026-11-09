@@ -1,0 +1,41 @@
+# ----------------------------------------------------------------------------
+# PouvoirsRoulette - configuration
+# ----------------------------------------------------------------------------
+
+# true  : seuls les joueurs qui se connectent pour la TOUTE PREMIERE fois ont droit a la roulette.
+# false : tout joueur qui n'a pas encore de pouvoir (ex : anciens joueurs au moment
+#         ou tu installes le plugin) aura la roulette a sa prochaine connexion.
+first-join-only: true
+
+# Rouvrir automatiquement le menu (apres 2 secondes) si le joueur le ferme
+# avant d'avoir appuye sur START. Il peut aussi le rouvrir avec /pouvoir.
+reopen-menu: true
+
+# Annoncer a tout le serveur le pouvoir qu'un joueur vient de tirer.
+broadcast: true
+
+# Probabilite de tomber sur un pouvoir COOL (0.0 = jamais, 1.0 = toujours).
+# Le reste du temps, le joueur tombe sur un pouvoir NUL.
+chance-cool: 0.6
+
+# ---------------------------- Points et livre -------------------------------
+points:
+  # Points gagnes en tuant un joueur.
+  player-kill: 10
+  # Quels monstres donnent des points : hostile (monstres hostiles), all (tous les mobs), off (aucun).
+  mob-kills: hostile
+  # Pour un monstre : mob-big-chance de gagner mob-big-points, sinon mob-small-points.
+  mob-big-chance: 0.3
+  mob-big-points: 5
+  mob-small-points: 2
+  # Points necessaires pour recevoir un Livre de la roulette (le surplus est conserve).
+  book-threshold: 100
+
+# ---------------------------------- Dash ------------------------------------
+dash:
+  # true : tout le monde recoit la Plume de dash (le pouvoir Dash n'est alors plus tire a la roulette).
+  for-everyone: false
+  # Temps de recharge, en secondes.
+  cooldown-seconds: 3.0
+  # Puissance du dash (1.6 = environ 6 blocs).
+  strength: 1.6

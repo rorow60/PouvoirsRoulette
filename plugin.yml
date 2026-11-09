@@ -1,0 +1,17 @@
+name: PouvoirsRoulette
+version: 1.3.1
+main: com.pouvoirs.roulette.PouvoirsPlugin
+api-version: '26.3'
+description: Roulette de pouvoirs, points de kill, livre bonus et dash
+softdepend: [Geyser-Spigot, floodgate]
+
+commands:
+  pouvoir:
+    description: Voir tes pouvoirs et tes points, ou gerer les pouvoirs (admin)
+    usage: /pouvoir [on|off|toggle|points|liste|reset|set|add|givepoints|givebook]
+    aliases: [pouvoirs, power]
+
+permissions:
+  pouvoirs.admin:
+    description: Permet de reset, donner des pouvoirs, des points ou des livres
+    default: op
